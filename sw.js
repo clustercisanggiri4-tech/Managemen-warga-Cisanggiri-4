@@ -1,7 +1,7 @@
 const CACHE_NAME = 'cisanggiri-v1';
 const urlsToCache = [
   '/',
-  '/index.html'
+  'index.html'
 ];
 
 self.addEventListener('install', event => {
@@ -24,4 +24,5 @@ self.addEventListener('fetch', event => {
         return fetch(event.request); // Jika tidak ada, ambil dari jaringan
       })
   );
+
 });
